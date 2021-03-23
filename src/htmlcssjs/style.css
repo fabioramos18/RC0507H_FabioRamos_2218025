@@ -1,0 +1,47 @@
+#task_wrapper{
+    margin-left: 10px;
+  }
+  body {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  }
+
+  #task_wrapper{
+    list-style: none;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  form{
+    
+    text-align: center;
+  }
+  ul{
+    text-align: center;
+    list-style: none;
+  }
+  .remove_item{
+    color: red;
+    padding: 10px 5px 10px 10px;
+    
+  }
+  
+  .clickeable{
+    cursor: pointer;
+  }
+  
+  .update_icon{
+    color: green;
+    padding: 10px 10px 10px 0;
+  }
+  
+  .show{
+    display: block;
+  }
+  
+  .hide{
+    display: none;
+  }
+  
