@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../img/fav.JPG" />
+    <title>Comportamento</title>
+
+  </head>
+    <body>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <h2>Comportamento</h2>
+              </div>
+              <button id="novocomp" type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">+ Novo</button>
+              <table id="tabelacomp" class="table table-bordered align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col" class="table-active">Comportamento</th>
+                    <th scope="col" class="table-active">Tem Presente</th>
+                    <th scope="col" class="table-active"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+          </div>
+
+          <!--Adicionar--->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Comportamento > Novo</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label>Comportamento</label>
+                    <input id="addcomp" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Tem Presente?</label>
+                    <input id="checkpresente" type="checkbox" checked>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" id="criarcomp">Criar</button>
+                </div>
+              </div>  
+            </div>
+            </div>
+
+         <!--Editar--->
+          <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Comportamento > Editar</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Comportamento</label>
+                    <input id="edittextbox" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Tem Presente?</label>
+                    <input id="editche" type="checkbox" checked>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" id="editarcomp">Guardar</button>
+                </div>
+              </div>  
+            </div>
+            </div>
+          
+          <!--Apagar--->
+          <div class="modal fade" id="myModal3" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Comportamento > Apagar</h4>
+              </div>
+              <div class="modal-body">
+                <p>Confirma que deseja eliminar o comportamento:</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" id="apagarcomp">Eliminar</button>
+              </div>
+            </div>  
+          </div>
+          </div>
+
+    <script src="comportamentos.js"></script>
+  </body>
+</html>
